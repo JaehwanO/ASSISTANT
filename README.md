@@ -1,4 +1,4 @@
-# ASSIST
+# ALICIA
 Source code for the papers
 
 Pytorch_geometric (https://pytorch-geometric.readthedocs.io/en/latest/) package is used for the implementation of graph neural networks (GNNs).
