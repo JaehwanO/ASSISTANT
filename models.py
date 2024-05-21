@@ -35,7 +35,7 @@ from tqdm import trange
 import time
 import IPython
 
-class ASSIST:
+class ALICIA:
     def __init__(self, G1, G2, graphname, k_hop, hid, alignment_dict, alignment_dict_reversed, train_ratio, patient, idx1_dict, idx2_dict, alpha,beta):
 
         self.G1 = G1

@@ -49,8 +49,8 @@ args = parse_args()
 if __name__ == "__main__":
     start_time = time.time()
     G1, G2, alignment_dict, alignment_dict_reversed, idx1_dict, idx2_dict = na_dataloader(args)
-    ASSIST = ASSIST(G1, G2, args.graphname, args.k_hop, args.hid_dim, alignment_dict, alignment_dict_reversed, \
+    ALICIA = ALICIA(G1, G2, args.graphname, args.k_hop, args.hid_dim, alignment_dict, alignment_dict_reversed, \
                                       args.train_ratio, args.patient, idx1_dict, idx2_dict, alpha = G2.number_of_nodes() / G1.number_of_nodes(), beta = 1)    
-    ASSIST.run_algorithm()
+    ALICIA.run_algorithm()
     end_time = time.time()
     print(f"Dataset: {args.graphname} took {(end_time-start_time):.0f} seconds")
