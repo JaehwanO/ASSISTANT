@@ -15,7 +15,6 @@ Pytorch_geometric (https://pytorch-geometric.readthedocs.io/en/latest/) package 
 - matplotlib
 
 
-
 # Running
 
 run ``main.py`` script file
