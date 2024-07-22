@@ -35,7 +35,7 @@ from tqdm import trange
 import time
 import IPython
 
-class ALICIA:
+class ASSISTANT:
     def __init__(self, G1, G2, graphname, k_hop, hid, alignment_dict, alignment_dict_reversed, train_ratio, patient, idx1_dict, idx2_dict, alpha,beta):
 
         self.G1 = G1
@@ -677,9 +677,6 @@ def compute_precision_k(top_k_matrix, gt, idx1_dict, idx2_dict):
             n_matched += 1
     return n_matched/len(gt)
     
-
-
-
 def sigmoid(input, derivative = False):
     if derivative:
         return input * (1 - input)
